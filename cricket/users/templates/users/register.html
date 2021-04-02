@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="zxx">
+<!--[endif]-->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8" />
+    <title>CrickPred || Register</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Cricket Prediction Platform" />
+    <meta name="keywords" content="Cricket Prediction Platform"/>
+    <meta name="author" content="" />
+    <meta name="MobileOptimized" content="320" />
+    <!--favicon-->
+	<link rel="shortcut icon" type="image/png" href="{% static 'website/images/inner/favicon.png'%}" />
+	<link rel="stylesheet" href="{% static 'website/css/animate.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/fonts.css'%}">
+	<link rel="stylesheet" href="{% static 'website/flaticon/football/flaticon.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/owl.carousel.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/owl.theme.default.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/jquery-ui.min.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/customScrollbar.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css'%}">
+	<link rel="stylesheet" href="{% static 'website/css/inner_style.css'%}">
+<!-- <script src='../../google_analytics_auto.js'></script> -->
+</head>
+
+<body>
+
+
+    <div class="cursor cursor-shadow"></div>
+    <div class="cursor cursor-dot"></div>
+    <!-- Top Scroll Start --><a href="javascript:" id="return-to-top"><i class="flaticon-up-arrow"></i></a>
+ 
+    <!-- inner Title Start -->
+    <div class="indx_title_main_wrapper float_left">
+        <div class="title_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 full_width">
+                    <div class="indx_title_left_wrapper">
+                        <h2>Register</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 full_width">
+                    <div class="indx_title_right_wrapper">
+                        <ul>
+                            <li><a href="{% url 'home' %}">Home</a> &nbsp;&nbsp;&nbsp;> </li>
+                            <li>login</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inner Title End -->
+    <!--register area start here-->
+    <div class="login_section float_left">
+      <div class="login_back_img register_back"></div>
+          <div class="login_form_wrapper">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                          <div class="ft_left_heading_wraper gallery_heading_center text-center login_head">
+                              <h1>register here</h1>
+                              <p>Register Got Your Account With sporteyz Is Free And Easy.</p>
+  
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-8 offset-md-2 col-sm-12">
+                      <div class="login_wrapper">
+                              <div class="jp_regiter_top_heading">
+                                  <p>Fields with * are mandetory </p>
+                              </div>
+                                  <!-- <form  method="POST">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label for="first_name">First Name</label>
+                                        <input type="text" name="first_name" class="form-control" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="last_name">Last Name</label>
+                                        <input type="text" name="last_name" class="form-control" required>
+                                      </div>
+                                      {{  form.as_p}}
+                                  <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" class="form-control" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="password2">Password</label>
+                                    <input type="password" name="password" class="form-control" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="password">Confirm Password</label>
+                                    <input type="password" name="password2" class="form-control" required>
+                                  </div>
+                                  <input type="submit" value="Register" class="btn btn-secondary btn-block">
+                                </form> -->
+                                {% load crispy_forms_tags %}
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    <fieldset class="form-group">
+                                        <legend class="border-bottom mb-4">Join Today</legend>
+                                        {{ form|crispy }}
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <button class="btn btn-outline-info" type="submit">Sign Up</button>
+                                    </div>
+                                </form>
+                         
+                              <div class="login_message">
+                                  <p>Already a member? <a href="{% url 'login' %}"> Login Here </a> </p>
+                              </div>
+  
+                          </div>
+  
+                      <p class="btm_txt_register_form">In case you are using a public/shared computer we recommend that you logout to prevent any un-authorized access to your account</p>
+                  </div>
+              </div>
+          </div>
+        <div class="login_back_img22 register_back22"></div>
+      </div>
+      <!--register area start end-->
+    </div>
+    <!--login section end-->
+    <!--patner slider Start -->
+    <div class="patner_main_section_wrapper float_left">
+        
+    </div>
+    <!-- prs patner slider End -->
+        <!-- footer Wrapper start -->
+        <div class="footer_wrapper float_left">
+            <!--newsletter wrapper start-->
+    
+            <div class="news_section">
+                <div class="container">
+    
+                    <div class="news_letter_wrapper float_left">
+    
+                        <div class="lr_nl_heading_wrapper">
+                            <h2>Contact Today</h2>
+                            <p>To get more details and information</p>
+                        </div>
+    
+                        <div class="lr_nl_form_wrapper">
+                            <button>+94 76 710 5197</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <!--newsletter wrapper end-->
+            <!-- section-2 start-->
+            <div class="section_2">
+                <div class="section2_footer_overlay"></div>
+                <div class="section2_footer_wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6">
+                                <div class="footer_widget section2_about_wrapper">
+                                    <div class="wrapper_first_image">
+                                        <a href="{% url 'home' %}"><img src="{%static 'website/images/cricket/logo.png'%}" class="img-responsive" alt="logo" /></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6">
+                                <div class="footer_widget section2_useful_wrapper">
+                                    <h4>useful links </h4>
+                                    <ul>
+                                        <li><a href="{% url 'home' %}"><i class="fa fa-angle-right"></i>Home</a>
+                                        </li>
+                                        <li><a href="{% url 'register' %}"><i class="fa fa-angle-right"></i>Signup</a>
+                                        </li>
+                                        <li><a href="{% url 'login' %}"><i class="fa fa-angle-right"></i>Login</a>
+                                        </li>
+                                        <li><a href="{% url 'contact' %}"><i class="fa fa-angle-right"></i>Contact</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6">
+                                <div class="footer_widget section2_useful_second_wrapper">
+                                    <h4>Contact <span> info </span></h4>
+                                    <ul>
+                                        <li><i class="fa fa-location-arrow"></i>997/B/C Ma eliya, Ja ela
+                                        </li>
+                                        <li><i class="fa fa-phone-square"></i>+94 76 710 5197
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-envelope-square"></i>info@crickpred.com</a></li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section2_bottom_wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <div class="btm_foter_box">
+    
+                                    <p><i class="fa fa-copyright"></i> 2021 Crickpred. Design by <a href="index.html"> Shenal Perera .</a></p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close_wrapper">
+            </div>
+            <!-- section-2 end -->
+        </div>
+        <!--footer wrapper end-->
+
+    <!-- js files start -->
+
+    <script src="{% static 'website/js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static 'website/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'website/js/modernizr.js'%}"></script>
+    <script src="{% static 'website/js/jquery-ui.js'%}"></script>
+    <script src="{% static 'website/js/owl.carousel.js'%}"></script>
+    <script src="{% static 'website/js/jquery.bxslider.min.js'%}"></script>
+    <script src="{% static 'website/js/customScrollbar.min.js'%}"></script>
+    <script src="{% static 'website/js/jquery.countTo.js'%}"></script>
+    <script src="{% static 'website/js/jquery.inview.min.js'%}"></script>
+    <script src="{% static 'website/js/jquery.magnific-popup.js'%}"></script>
+    <script src="{% static 'website/js/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'website/js/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'website/js/cursor.js'%}"></script>
+    <script src="{% static 'website/js/main.js'%}"></script>
+    <!-- custom js-->
+</body>
+
+
+</html>
